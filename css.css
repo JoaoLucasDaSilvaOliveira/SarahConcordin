@@ -411,6 +411,7 @@ label{
         padding-bottom: 0px;
         height: 400px;
         padding-top: 35px;
+        height: auto;
     }
     aside p:nth-of-type(2){
         font-size: 22px;
@@ -522,5 +523,17 @@ label{
     .laço{
         left: 52%;
         top: 95px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .h1{
+        font-size: calc(15px + 1vw);
+        margin-left: -30px;
+    }
+    #hamb{
+        display: none;
+    }
+    .logo-header{
+        width: calc(50px + 2vw);
     }
 }
