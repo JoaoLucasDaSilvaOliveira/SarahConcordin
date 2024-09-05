@@ -7,6 +7,11 @@
     /* 80% {rotate:4deg} */
     100% {rotate: 5deg}
 }
+@keyframes borda{
+    0% {scale: 1}
+    50% {scale: 1.05}
+    100% {scale: 1}
+}
 body{
     display: flex;
     flex-direction: column;
@@ -15,6 +20,7 @@ body{
     background-color: #FFE0E5;
     padding-right: 2px;
     padding-left: 1px;
+
 }
 /* navbar */
 .cabecalho{
@@ -249,7 +255,7 @@ a{
     height: 100vh;
     background-color: #ffe8eccb;
     backdrop-filter: blur(5px);
-    z-index: 1;
+    z-index: 10;
     opacity: 0;
     pointer-events: none;
     transition: 500ms ease;
@@ -361,6 +367,19 @@ input{
 }
 input::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
+}
+mark{
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    animation: borda 2s infinite ease;
+    border-radius: 50px;
+    border: solid 3px#ff1d8e;
 }
 button
 {
