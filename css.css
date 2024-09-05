@@ -315,7 +315,15 @@ strong{
     align-self: end;
     padding-top: 10px;
 }
+#ajuda{
+    margin-top: 10px;
+    margin-right: 10px;
+}
 .envolvIMC{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 10px 5px 25px 5px;
 }
@@ -334,6 +342,7 @@ strong{
 }
 .txt {
     margin-top: 0;
+    line-height: 30px;
     margin-bottom: 10px;
 }
 #ajuda{
@@ -355,7 +364,6 @@ input::-webkit-inner-spin-button {
 }
 button
 {
-    margin-top: 10px;
     border-radius: 50px;
     border-color: #ff1d8e;
     color: #B02773;
@@ -364,6 +372,7 @@ button
 }
 label{
     display: block;
+    padding: 5px;
 }
 /* p/ mobile e outras picas */
 /* começa a mudar a partir de 950px */
@@ -449,7 +458,7 @@ label{
     }
     .infos p, .imc p{
         font-size: 25px;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         line-height: 30px;
     }
     .infos{
